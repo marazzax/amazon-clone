@@ -52,8 +52,8 @@ function Header() {
             <Image
             onClick={() => openLocalResource()}
             src="https://i.ibb.co/1rH3Bbp/web3-Photo-Room-png-Photo-Room.png"
-            width={10}
-            height={10}
+            width={100}
+            height={100}
             objectFit="contain"
             className="cursor-pointer"
           />
