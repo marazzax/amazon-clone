@@ -58,7 +58,7 @@ function Header() {
     </svg>
 
             <p className="hidden md:inline font-extrabold md:text-sm mt-2">
-               Web3
+                Web3
             </p>
           </div>
           <div onClick={!session ? signIn : signOut} className="link">
