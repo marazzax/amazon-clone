@@ -13,6 +13,10 @@ function Header() {
   const { data: session } = useSession();
   const router = useRouter();
   const items = useSelector(selectItems);
+  const openLocalResource = () => {
+    window.open('http://127.0.0.1:5555');
+  };
+  
 
   return (
     <header>
@@ -41,6 +45,22 @@ function Header() {
         {/* Right Side */}
 
         <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
+          <div
+            onClick={() => openLocalResource()}
+            className="relative link flex items-center"
+          >
+            <Image
+            onClick={() => openLocalResource()}
+            src="https://i.ibb.co/1rH3Bbp/web3-Photo-Room-png-Photo-Room.png"
+            width={10}
+            height={10}
+            objectFit="contain"
+            className="cursor-pointer"
+          />
+            <p className="hidden md:inline font-extrabold md:text-sm mt-2">
+              Web3
+            </p>
+          </div>
           <div onClick={!session ? signIn : signOut} className="link">
             <p>{session ? `Hello, ${session.user.name}` : "Sign In"}</p>
             <p className="font-extrabold md:text-sm">Account & Lists</p>
