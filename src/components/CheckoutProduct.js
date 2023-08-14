@@ -60,7 +60,7 @@ function CheckoutProduct({
             <img
               loading="lazy"
               className="w-12"
-              src="https://ibb.co/vvy9vNL"
+              src="https://i.ibb.co/rf89fB5/prime.png"
               alt=""
             />
             <p className="text-xs text-gray-500">Free Next-day Delivery</p>
